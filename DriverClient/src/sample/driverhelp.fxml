@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/temp1.png" />
+         </image>
+      </ImageView>
+      <ScrollBar layoutX="586.0" layoutY="110.0" orientation="VERTICAL" prefHeight="289.0" prefWidth="14.0" />
+      <Accordion layoutX="-7.0" layoutY="109.0" prefHeight="277.0" prefWidth="593.0">
+        <panes>
+          <TitledPane animated="false" prefHeight="180.0" prefWidth="578.0" text="How to Accept a ride?">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label alignment="TOP_LEFT" layoutX="6.0" prefHeight="79.0" prefWidth="585.0" text="1. Select go online from main menu &#10;2. You will be pinged with the ride information when a customer nearby your location will book a ride&#10;3. you may accept the ride &#10;4. A ride will be assigned to you and you can begin your journey &#10;" />
+                     </children></AnchorPane>
+            </content>
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+          </TitledPane>
+          <TitledPane animated="false" ellipsisString="" text="How to cancel a ride?">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label alignment="TOP_LEFT" layoutX="6.0" layoutY="-1.0" prefHeight="203.0" prefWidth="585.0" text="1. If you have accepted a ride you will see an option of cancelling it in your app&#10;2. you can cancel within 2 minutes of accepting the ride&#10;3. you can cancel ride if passenger doesnt arrive till 5 minutes on pickup location&#10;" />
+                     </children></AnchorPane>
+            </content>
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+          </TitledPane>
+          <TitledPane animated="false" text="How to view ride history">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label alignment="TOP_LEFT" layoutX="5.0" layoutY="-2.0" prefHeight="203.0" prefWidth="586.0" text="1. Select check ride history from the main menu&#10; " />
+                     </children></AnchorPane>
+            </content>
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+          </TitledPane>
+        </panes>
+      </Accordion>
+   </children>
+</AnchorPane>
